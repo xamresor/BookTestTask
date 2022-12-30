@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %} Inviter list {% endblock %}</title>
+        <h2>{% block Header %} Inviter list {% endblock %}</h2>
+    </head>
+    <body>
+        <a href="{{ path('app_home_page') }}">back</a>
+        {{ include('tables/key_data_table.html.twig', { 'names': names, 'data': data }) }}
+    </body>
+</html>
